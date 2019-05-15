@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+    
+*
+    margin 0
+    padding 0
+
+html
+body
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+
+canvas
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+
+// Page accueil
+
+.game 
+    position absolute
+    top 25%
+    left 25%
+    width 50%
+    height 53%
+    background-image: radial-gradient(circle, #e15f41, #dd564c, #d74e57, #ce4960, #c44569);
+    z-index: 1;
+    border: 3px solid #ffffff
+
+h1
+    display: flex
+    font-family: 'Major Mono Display', monospace;
+    justify-content: center
+    color white
+    margin-left: 8%
+    margin-top: 5%
+    margin-right: 8%
+    font-size: 1.2em
+    line-height: 25px
+
+.game .instructions
+    
+    display: flex
+    justify-content: center
+    color white
+    display: flex
+    justify-content: center
+    margin: 8%
+    font-family: 'Major Mono Display', monospace;
+    line-height: 25px
+
+.game .touch
+    
+    display: flex
+    color white
+    margin-top: 8%
+    margin-left: 8%
+    font-family: 'Major Mono Display', monospace;
+
+.button-start
+    display: flex
+    justify-content: center
+    margin-top: 8%
+    justify-content: space-around
+    border: 3px solid #ffffff
+    width: 10%
+    height 5%
+    margin-left: 43%
+    color: white
+    cursor pointer
+    font-family: 'Major Mono Display', monospace;
+    line-height: 25px
+    
+.game.translation
+    animation slide 2s forwards
+    will-change transform
+
+@keyframes slide 
+    0% 
+        transform translateX(0%)
+    100%
+        transform translateX(-150%)
+    
+// Page Win 
+
+.win
+    position absolute
+    top 25%
+    left 25%
+    width 50%
+    height 35%
+    background-image: radial-gradient(circle, #e15f41, #dd564c, #d74e57, #ce4960, #c44569);
+    z-index: 1;
+    border: 3px solid #ffffff
+
+.win .title-2
+    display: flex
+    font-family: 'Major Mono Display', monospace;
+    justify-content: center
+    color white
+    margin: 8%
+    font-size: 1.6em
+    line-height: 25px
+
+.win.translation
+    animation slide 2s forwards
+    will-change transform
+
+.win .button-start
+    display: flex
+    justify-content: center
+    margin-top: 5%
+    justify-content: space-around
+    border: 3px solid #ffffff
+    width: 30%
+    height 10%
+    margin-left: 35%
+    color: white
+    cursor pointer
+    font-family: 'Major Mono Display', monospace;
+    line-height: 25px
+
+.win .score
+    display: flex
+    font-family: 'Major Mono Display', monospace;
+    justify-content: center
+    color white
+    margin: 5%
+    font-size: 1.6em
+ 
+// Page Lose 
+
+.lose
+    position absolute
+    top 25%
+    left 25%
+    width 50%
+    height 35%
+    background-image: radial-gradient(circle, #e15f41, #dd564c, #d74e57, #ce4960, #c44569);
+    z-index: 1;
+    border: 3px solid #ffffff
+
+.lose .title-3
+    display: flex
+    font-family: 'Major Mono Display', monospace;
+    justify-content: center
+    color white
+    margin: 8%
+    font-size: 1.6em
+    line-height: 25px
+
+.lose .button-start
+    display: flex
+    justify-content: center
+    margin-top: 8%
+    justify-content: space-around
+    border: 3px solid #ffffff
+    width: 30%
+    height 10%
+    margin-left: 32%
+    color: white
+    cursor pointer
+
+.lose.translation
+
+    animation slide 2s forwards
+    will-change transform
+
+
+
+
